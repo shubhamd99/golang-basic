@@ -1,5 +1,7 @@
 ### Go
 
+![golang](https://i.imgur.com/9y787WC.png)
+
 * Golang - Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency. 
 
 * Concurrency - In computer programming, concurrency is ability of a computer to deal with multiple things at once. A general purpose PC might have just one CPU core which does all the processing and computation.
@@ -43,3 +45,7 @@
 ###### Workspace
 
 ![workspace](https://i.imgur.com/Rt1sBu3.png)
+
+###### Integers
+
+![int types](https://i.imgur.com/3GzT2vT.png)
