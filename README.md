@@ -133,3 +133,16 @@ if(ok){
     fmt.Println("Capital of United States is not present") 
 }
 ```
+
+###### [Struct](https://www.tutorialspoint.com/go/go_structures.htm)
+
+Go arrays allow you to define variables that can hold several data items of the same kind. Structure is another user-defined data type available in Go programming, which allows you to combine data items of different kinds.
+
+```
+type Books struct {
+   title string
+   author string
+   subject string
+   book_id int
+}
+```
