@@ -183,3 +183,20 @@ A defer statement defers the execution of a function until the surrounding funct
 Panic is a built-in function that stops the ordinary flow of control and begins panicking. 
 
 Recover is a built-in function that regains control of a panicking goroutine. Recover is only useful inside deferred functions. During normal execution, a call to recover will return nil and have no other effect. 
+
+###### [Pointers](https://www.tutorialspoint.com/go/go_pointers.htm)
+
+As you know, every variable is a memory location and every memory location has its address defined which can be accessed using ampersand (&) operator, which denotes an address in memory. 
+
+A pointer is a variable whose value is the address of another variable, i.e., direct address of the memory location. 
+
+```
+var var_name *var-type
+
+var ip *int        /* pointer to an integer */
+var fp *float32    /* pointer to a float */
+
+var  ptr *int
+
+fmt.Printf("The value of ptr is : %x\n", ptr  )
+```
