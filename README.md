@@ -224,3 +224,16 @@ func max(num1, num2 int) int {
 ###### [Interfaces](https://www.tutorialspoint.com/go/go_functions.htm)
 
 Collection of behaviours. Go programming provides another data type called interfaces which represents a set of method signatures.
+
+###### [Goroutines](https://gobyexample.com/goroutines)
+
+A goroutine is a lightweight thread of execution.
+
+Suppose we have a function call f(s). Here’s how we’d call that in the usual way, running it synchronously.
+
+```f("direct")```
+
+To invoke this function in a goroutine, use `go f(s)`. This new goroutine will execute concurrently with the calling one.
+
+To Identify Race Conditions run ```go run -race .\Main.go```
+
