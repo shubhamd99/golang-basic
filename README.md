@@ -146,3 +146,32 @@ type Books struct {
    book_id int
 }
 ```
+
+###### Loops
+
+```
+arr := []int{1, 2, 3, 4, 5, 6, 7}
+
+for key, value := range arr {
+	fmt.Println(key, value)
+}
+```
+
+###### If and Switch
+
+```
+if i >= 0 || j >= 0 {
+    fmt.Println("i, j is greater than 0")
+}
+	
+
+switch o := 2 + 3; o {
+case 1, 3, 5, 7, 9:
+   fmt.Println("Odd")
+case 2, 4, 8:
+   fmt.Println("Even")
+default:
+   fmt.Println("default")
+}
+
+```
