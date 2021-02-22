@@ -136,7 +136,7 @@ if(ok){
 
 ###### [Struct](https://www.tutorialspoint.com/go/go_structures.htm)
 
-Go arrays allow you to define variables that can hold several data items of the same kind. Structure is another user-defined data type available in Go programming, which allows you to combine data items of different kinds.
+Collection of data types. Go arrays allow you to define variables that can hold several data items of the same kind. Structure is another user-defined data type available in Go programming, which allows you to combine data items of different kinds.
 
 ```
 type Books struct {
@@ -220,3 +220,7 @@ func max(num1, num2 int) int {
    return result 
 }
 ```
+
+###### [Interfaces](https://www.tutorialspoint.com/go/go_functions.htm)
+
+Collection of behaviours. Go programming provides another data type called interfaces which represents a set of method signatures.
