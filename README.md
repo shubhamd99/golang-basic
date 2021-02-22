@@ -175,3 +175,11 @@ default:
 }
 
 ```
+
+###### Defer, Panic and Recover
+
+A defer statement defers the execution of a function until the surrounding function returns. The deferred call's arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.
+
+Panic is a built-in function that stops the ordinary flow of control and begins panicking. 
+
+Recover is a built-in function that regains control of a panicking goroutine. Recover is only useful inside deferred functions. During normal execution, a call to recover will return nil and have no other effect. 
