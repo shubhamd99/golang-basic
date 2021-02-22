@@ -237,3 +237,20 @@ To invoke this function in a goroutine, use `go f(s)`. This new goroutine will e
 
 To Identify Race Conditions run ```go run -race .\Main.go```
 
+###### [Channels](https://tour.golang.org/concurrency/2)
+
+Channels are a typed conduit through which you can send and receive values with the channel operator, <-.
+
+```
+ch <- v    // Send v to channel ch.
+v := <-ch  // Receive from ch, and assign value to v.
+```
+
+Like maps and slices, channels must be created before use:
+
+```
+ch := make(chan int)
+```
+
+By default, sends and receives block until the other side is ready. This allows goroutines to synchronize without explicit locks or condition variables.
+
