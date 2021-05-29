@@ -46,7 +46,27 @@
 
 7. `go get github.com/user/repo` To Install the package
 8. `go mod init github.com/shubhamd99/golang-basic` (Create Go MOD file - Package Manager)
+9.  `go mod tidy` (Remove `// indirect` comments in go mod file and remove the un-necessary packages as well)
 
+10. `go get ./...` (Install all the necessary packages for the project after cloning fresh project)
+11. `go clean -cache -modcache -i -r` (Clear all local downloaded cache)
+12. `go build` (This also download all the packages for the project from go.mod file)
+
+###### Packages Used
+```
+go get go.uber.org/zap
+go get github.com/julienschmidt/httprouter
+go get rsc.io/quote
+```
+
+###### Go Get Types
+```
+1. go get github.com/julienschmidt/httprouter (Its same as go get github.com/julienschmidt/httprouter@latest)
+2. go get github.com/julienschmidt/httprouter@v1.2 (with version specified)
+3. 
+```
+
+![releases](https://i.imgur.com/2frdq08.png)
 
 ###### Directory Structure
 1. `open $GO_PATH`
