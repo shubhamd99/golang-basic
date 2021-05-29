@@ -41,10 +41,11 @@
 2. Check Connection - `curl -v -d 'Shubham' localhost:9090`
 3. Create binary exe - `go build`
 
-
-##### Workspace
-
-![workspace](https://i.imgur.com/Rt1sBu3.png)
+###### Useful Commands
+```
+1. Open $GO_PATH (Open GO Path Directory in Finder)
+2. go run main.go (Run go file)
+```
 
 ###### [Data Types](https://www.tutorialspoint.com/go/go_data_types.htm)
 
