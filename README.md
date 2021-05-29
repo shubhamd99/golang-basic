@@ -35,16 +35,41 @@
 2. Docker - https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
 3. Live Share - https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
 
-###### Run
-
-1. RUN - `go run main.go`
-2. Check Connection - `curl -v -d 'Shubham' localhost:9090`
-3. Create binary exe - `go build`
-
 ###### Useful Commands
-```
-1. Open $GO_PATH (Open GO Path Directory in Finder)
-2. go run main.go (Run go file)
+
+1. `open $GO_PATH` (Open GO Path Directory in Finder)
+2. `go run main.go` (Run go file)
+3. `go env` (To see all the Environment variables used by Go module)
+4. `go run --work main.go` (Show the temp location where the binary is stored)
+5. `go build` OR `go build -o shubham` (Take the program compiles it and generates the binary exe)
+6. `go install` (The go install command behaves almost identically to go build , but instead of leaving the executable in the current directory, or a directory specified by the -o flag, it places the executable into the `$GOPATH/bin` directory)
+
+7. `go get github.com/user/repo` To Install the package
+8. `go mod init github.com/shubhamd99/golang-basic` (Create Go MOD file - Package Manager)
+
+
+###### Directory Structure
+1. `open $GO_PATH`
+2. src folder is the place where we will interact the most
+3. Inside `src` folder we will have different hosts like github.com. Every package out there is on the some host. Go library uses this host to pull out the data.
+4. Inside hosts folder we will have our github username folder
+5. Inside github username folder we will have our projects
+6. `bin` is the directory where golang stores all its binary
+7. `pkg` is the directory where golang stores and pulls the dependencies and mods
+
+![directory_go](https://i.imgur.com/lpW8reG.png)
+
+###### GO Directory Image View
+![d_go](https://i.imgur.com/mR7wavZ.png)
+
+###### File Types
+![file_types](https://i.imgur.com/rSJYoqz.png)
+
+###### Packages
+In go project we have to declare main package which can have multiple packages link to it together. We have to declare it on the top of the file.
+
+```go
+package main --> package a --> package b
 ```
 
 ###### [Data Types](https://www.tutorialspoint.com/go/go_data_types.htm)
@@ -74,7 +99,10 @@ A variable is nothing but a name given to a storage area that the programs can m
 var  i, j, k int;
 var  c, ch byte;
 var  f, salary float32;
-d =  42;
+
+c := 200 // Shorthand variable assignment
+
+const dev = "Hello" // Constants
 ```
 
 ###### Integers Types
@@ -206,7 +234,7 @@ fmt.Printf("The value of ptr is : %x\n", ptr  )
 
 A function is a group of statements that together perform a task. 
 
-```
+```go
 /* function returning the max between two numbers */
 
 func max(num1, num2 int) int {
@@ -219,6 +247,19 @@ func max(num1, num2 int) int {
       result = num2
    }
    return result 
+}
+```
+The init function runs before the main function, generally used for initialization
+```go
+func init() {
+	// init
+}
+```
+
+The main function is the entry point of the Go module
+```go
+func main() {
+	// execute
 }
 ```
 
